@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BlockBusterLab": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
