@@ -46,19 +46,18 @@ namespace BlockBusterLab
             output += $"Genre: {Category}\n";
             return output;
         }
-
+        
         public void PrintScenes()
         {
+            int num = 0;
             foreach (string s in Scenes)
             {
-                Console.WriteLine(Scenes.IndexOf(s));
+                Console.WriteLine($"{Scenes[num]}");
                 Console.WriteLine(s);
             }
         }
 
-        public abstract void Play();
-
-        
+        public abstract void Play(); 
     }
      
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\grace\\OneDrive\\Desktop\\Blockbuster Lab\\BlockBusterLab\\BlockBusterLab\\BlockBusterLab.csproj",
+      "projectUniqueName": "C:\\Users\\grace\\OneDrive\\Desktop\\ClassWork\\Blockbuster Lab\\BlockBusterLab\\BlockBusterLab\\BlockBusterLab.csproj",
       "projectName": "BlockBusterLab",
-      "projectPath": "C:\\Users\\grace\\OneDrive\\Desktop\\Blockbuster Lab\\BlockBusterLab\\BlockBusterLab\\BlockBusterLab.csproj",
+      "projectPath": "C:\\Users\\grace\\OneDrive\\Desktop\\ClassWork\\Blockbuster Lab\\BlockBusterLab\\BlockBusterLab\\BlockBusterLab.csproj",
       "packagesPath": "C:\\Users\\grace\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\grace\\OneDrive\\Desktop\\Blockbuster Lab\\BlockBusterLab\\BlockBusterLab\\obj\\",
+      "outputPath": "C:\\Users\\grace\\OneDrive\\Desktop\\ClassWork\\Blockbuster Lab\\BlockBusterLab\\BlockBusterLab\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\grace\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -31,15 +31,24 @@ namespace BlockBusterLab
             Movies.Add(m5);
             Scenes = new List<String>();
         }
-        
         public void PrintMovies()
         {
             foreach (Movie m in Movies)
             {
+                Console.WriteLine(Movies.IndexOf(m)+1);
+                Console.WriteLine(m.Title);
+                //Console.WriteLine(m);
+            }
+        }
+
+        public void PrintInfo(int num)
+        {
+           foreach (Movie m in Movies)
+            {
                 string output = "";
-                output += $"{Title}\n";
+                output += $"{Title}";
                 Console.WriteLine(Movies.IndexOf(m));
-                Console.WriteLine(m);
+                Console.WriteLine(num);
                 Console.WriteLine(output);
             }
         }
@@ -54,17 +63,16 @@ namespace BlockBusterLab
             this.Scenes = Scenes;
             
         }
-
         public List<string> Scenes { get; set; }
 
-        public virtual string PrintInfo(int a)
-        {
-            string output = "";
-            output += $"Title: {Title}\n";
-            //output += $"RunTime: {RunTime} minutes \n";
-            //output += $"Genre: {Category}\n";
-            return output;
-        }
+        //public virtual string PrintInfo(int a)
+        //{
+        //    string output = "";
+        //    output += $"Title: {Title}\n";
+        //    //output += $"RunTime: {RunTime} minutes \n";
+        //    //output += $"Genre: {Category}\n";
+        //    return output;
+        //}
         public void PrintScenes(int a)
         {
             foreach (string s in Scenes)
@@ -75,20 +83,23 @@ namespace BlockBusterLab
             }
         }
 
-        public void CheckOut(int a)// Print movies// Get the index // Print info// return Movie
+        public Movie GetMovie(int num)
         {
-            PrintMovies();
-            Console.WriteLine("Please enter a number 0-5");
-            string input = Console.ReadLine();
-            int num = int.Parse(input);
-            PrintInfo(num);
-            foreach (string s in Scenes)
-            { 
-                {
-                    Console.WriteLine(Scenes.IndexOf(s));
-                    Console.WriteLine(s);
-                }
-            }
+            return Movies[num];
+        }
+
+        public void CheckOut()// Print movies// Get the index // Print info// return Movie
+        {
+            //PrintMovies();
+            //Console.WriteLine("Please enter a number 0-5 for the movie you would like to see.");
+            
+            int num = int.Parse(Console.ReadLine());
+            Movie m = GetMovie(num - 1);
+            m.PrintInfo(num);
+            //Console.WriteLine($"{ Scenes[num]}");
+
+            
+            
         }
     }
     
