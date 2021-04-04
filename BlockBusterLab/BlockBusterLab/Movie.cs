@@ -36,6 +36,7 @@ namespace BlockBusterLab
             output += $"RunTime: {RunTime} minutes \n";
             output += $"Genre: {Category}\n";
             return output;
+
         }
 
         public virtual string PrintInfo(int a)
@@ -46,7 +47,7 @@ namespace BlockBusterLab
             output += $"Genre: {Category}\n";
             return output;
         }
-        
+
         public void PrintScenes()
         {
             int num = 0;

@@ -41,16 +41,25 @@ namespace BlockBusterLab
             }
         }
 
-        public void PrintInfo(int num)
+        //public void PrintInfo(int num)
+        //{
+        //   foreach (Movie m in Movies)
+        //    {
+        //        string output = "";
+        //        output += $"{Title}";
+        //        Console.WriteLine(Movies.IndexOf(m));
+        //        Console.WriteLine(num);
+        //        Console.WriteLine(output);
+        //    }
+        //}
+
+        public virtual string PrintInfo(int a)
         {
-           foreach (Movie m in Movies)
-            {
-                string output = "";
-                output += $"{Title}";
-                Console.WriteLine(Movies.IndexOf(m));
-                Console.WriteLine(num);
-                Console.WriteLine(output);
-            }
+            string output = "";
+            output += $"Title: {Title}\n";
+            output += $"RunTime: {RunTime} minutes \n";
+            output += $"Genre: {Category}\n";
+            return output;
         }
         public string Title { get; set; }
         public Genre Category { get; set; }
